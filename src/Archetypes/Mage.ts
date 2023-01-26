@@ -4,9 +4,9 @@ import Archetype from './Archetype';
 export default class Mage extends Archetype {
   private static _createdArchetypesInstances = 0;
   private _energyType: EnergyType = 'mana';
-    
-  constructor(name = 'Mage') {
-    super(name);
+
+  constructor() {
+    super('Mage');
     Mage._createdArchetypesInstances += 1;
   }
 

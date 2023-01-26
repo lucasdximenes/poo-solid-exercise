@@ -4,8 +4,8 @@ export default class Dwarf extends Race {
   private static _createdRacesInstances = 0;
   private _maxLifePoints: number;
 
-  constructor(name = 'Dwarf', dexterity = 10) {
-    super(name, dexterity);
+  constructor(dexterity: number) {
+    super('Dwarf', dexterity);
     Dwarf._createdRacesInstances += 1;
     this._maxLifePoints = 80;
   }
