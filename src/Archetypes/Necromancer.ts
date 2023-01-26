@@ -4,7 +4,7 @@ import Archetype from './Archetype';
 export default class Necromancer extends Archetype {
   private static _createdArchetypesInstances = 0;
   private _energyType: EnergyType = 'mana';
-    
+
   constructor(name = 'Necromancer') {
     super(name);
     Necromancer._createdArchetypesInstances += 1;

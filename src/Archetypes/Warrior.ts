@@ -4,7 +4,7 @@ import Archetype from './Archetype';
 export default class Warrior extends Archetype {
   private static _createdArchetypesInstances = 0;
   private _energyType: EnergyType = 'stamina';
-    
+
   constructor(name = 'Warrior') {
     super(name);
     Warrior._createdArchetypesInstances += 1;
