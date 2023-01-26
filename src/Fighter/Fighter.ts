@@ -11,9 +11,3 @@ export default interface Fighter {
   levelUp(): void;
   receiveDamage(attackPoints: number): number;
 }
-
-  attack(enemy: Fighter): void;
-  special?(enemy: Fighter): void;
-  levelUp(): void;
-  receiveDamage(attackPoints: number): number;
-}
