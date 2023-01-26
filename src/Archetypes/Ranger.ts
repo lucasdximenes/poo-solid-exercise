@@ -3,14 +3,15 @@ import Archetype from './Archetype';
 
 export default class Ranger extends Archetype {
   private static _createdArchetypesInstances = 0;
-  private _energyType: EnergyType = 'stamina';
+  private _energyType: EnergyType;
 
   constructor(name = 'Ranger') {
     super(name);
+    this._energyType = 'stamina';
     Ranger._createdArchetypesInstances += 1;
   }
 
-  public static createdArchetypesInstances(): number {
+  public static createdArchetypeInstances(): number {
     return Ranger._createdArchetypesInstances;
   }
 
